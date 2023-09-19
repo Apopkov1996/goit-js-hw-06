@@ -9,6 +9,6 @@ function getInputEl() {
     if (inputEl.value !== '') {
         spanEl.textContent = inputEl.value;
     } else {
-        'Anonymous'
+        spanEl.textContent = 'Anonymous'
     }
 }

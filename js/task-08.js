@@ -12,11 +12,13 @@ function submitForm(e) {
   const password = e.currentTarget.elements.password;
 
   if (email.value === '' || password.value === '') {
-    alert('Please fill all the fields');
-  } else {
-    profile.email = email.value;
-    profile.password = password.value;
+    return alert('Please fill all the fields');
+  } 
+  
+  profile.email = email.value;
+  profile.password = password.value;
+  console.log(profile);
 
-  }
+  
   e.currentTarget.reset();
 }
